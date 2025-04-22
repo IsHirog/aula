@@ -1,46 +1,27 @@
-# 🌼 Ekul em Busca da Flor
+Descrição
+Você foi chamado para desenvolver um sistema de gerenciamento de estoque para uma loja de eletrônicos. O estoque inicial de pendrives é de 100 unidades. Cada vez que um cliente faz uma compra, o sistema deve calcular o estoque restante e aplicar descontos progressivos, seguindo as seguintes regras:
 
-Ekul é um pequeno e corajoso cachorro em uma missão muito importante: encontrar uma flor especial em um campo florido. Mas, como todo cãozinho, ele também é um pouco preguiçoso... só sai de casa se estiver bem disposto!
+Se o cliente comprar até 5 pendrives, não há desconto.
+Se o cliente comprar de 6 a 10 pendrives, recebe um desconto de 5% no valor total da compra.
+Se o cliente comprar mais de 10 pendrives, recebe um desconto de 10% no valor total da compra.
+O sistema que você vai desenvolver deve checar se existe estoque suficiente para atender ao pedido do cliente. Se o estoque for insuficiente, a compra não pode ser concluída. Foi informado à você que cada pendrive custa 5 reais.
 
-Este projeto simula as condições necessárias para Ekul sair em busca da flor e determina se ele tem ou não chance de encontrá-la, com base em variáveis como estação do ano, clima, horário e tempo de sono.
 
-## 🐾 Regras da Aventura
 
-- A **disposição** de Ekul depende do seu tempo de sono:
-  \[
-  \text{DISPOSIÇÃO} = \frac{2 \times \text{TEMPO DE SONO (horas)}}{1}
-  \]
-  Ele só sai de casa se a disposição for **maior ou igual a 70**.
+Formato de entrada
 
-- Se Ekul sair de casa, a **chance de encontrar a flor** é calculada por:
-  \[
-  \text{CHANCE} = \text{VALOR DA ESTAÇÃO} + (\text{HORÁRIO (h)} \mod \text{CLIMA}) \times \text{TEMPO DE SONO}
-  \]
+Um número inteiro que define a quantidade de pendrives que o cliente irá comprar.
 
-  Onde:
-  - **Clima**: `E` = 7 (Ensolarado), `C` = 5 (Chuvoso), `N` = 3 (Nublado)
+Formato de saída
 
-- A flor só nasce se:
-  \[
-  \text{CHANCE} \geq \text{VALOR DA ESTAÇÃO} \times 3
-  \]
+O valor total X da compra, com duas casas decimais de aproximação.
 
-- Caso a chance de encontrar ultrapasse 100%, ela é arredondada para **100%**.
+A quantidade Y de pendrives restantes após a compra.
 
-## 📥 Formato de Entrada
+Se o saldo for suficiente, sua saíra deverá ser (sem as aspas):
 
-- Linha 1: Dois inteiros → `horario_em_minutos` `horas_de_sono`
-- Linha 2: Dois caracteres → `estacao` (`I`, `V`, `P`, `O`) e `clima` (`E`, `C`, `N`)
-- Linha 3: Quatro inteiros → valores das estações: Inverno, Verão, Primavera, Outono
+"Ainda existe estoque! O valor total eh de R$ X e sobraram Y pendrives no estoque".
 
-## 📤 Formato de Saída
+Se o saldo for insuficiente, sua saída deverá ser (sem as aspas):
 
-Uma linha com a chance de encontrar a flor (em porcentagem), seguida por:
-
-- `"Ekul nao acordou disposto hoje :("`
-- `"Ekul possui chances de encontrar a flor :)"`
-- `"Ekul nao possui chances de encontrar a flor :("`
-
-## 💡 Exemplos
-
-### Entrada
+"Poxa, nao temos mais pendrives no estoque"
