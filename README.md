@@ -53,12 +53,12 @@ ClasseTulio2 AtaqueTulio2 VidaTulio2
 ClasseTulio3 AtaqueTulio3 VidaTulio3
 
 como por exemplo:
-1 10 50
-2 12 40
-3 15 35
-3 10 45
-1 11 42
-2 14 38
+1 15 10
+1 15 10
+1 70 100
+3 40 15
+3 40 16
+3 49.9 150
 
 
 📋 Saída Esperada
