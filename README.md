@@ -1,71 +1,79 @@
-# Jogo Armague 🃏⚔️
+# 🐍 Desafios Python - Variáveis, Input e Condicionais
 
-Este repositório contém a lógica do jogo **Armague**, uma competição entre dois jogadores, Túlio e Pedro, que disputam entre si utilizando cartas com atributos de combate. O jogo foi criado como uma forma divertida de decidir quem levaria as bandejas após o almoço no RU.
+Explore os mundos abaixo resolvendo situações com código! Use variáveis, input e condicionais para avançar 💡🐍
 
-## 🕹️ Regras do Jogo
+---
 
-O jogo é composto por **três duelos** entre as cartas dos jogadores. Cada carta possui os seguintes atributos:
+## 1. 🧙‍♂️ A Poção do Adivinho
 
-- **Classe:** Guerreiro (1), Mago (2) ou Arqueiro (3)
-- **Ataque:** Valor numérico
-- **Vida:** Valor numérico
+O mago precisa de um número para concluir a poção, mas ele deve ser **múltiplo de 3** e **positivo**.
 
-### ⚔️ Dinâmica dos Duelos
+- Peça ao usuário um número.
+- Verifique se ele é múltiplo de 3 e positivo.
+- Exiba uma mensagem apropriada.
 
-1. Antes do duelo, os atributos das cartas podem ser modificados com base nas classes, conforme a tabela de bônus abaixo.
-2. Em cada duelo, **a carta com menos pontos de vida ataca primeiro**.
-   - Se as cartas tiverem a mesma vida, **Pedro ataca primeiro**.
-3. Após o primeiro ataque, se a carta oponente não morrer (vida > 0), ela contra-ataca.
-4. O duelo termina após esse segundo ataque.
+### Exemplo:
+```
+Digite um número mágico: 9
+Resposta: Perfeito! Ingrediente aceito.
+```
 
-### 🧮 Bônus de Classe
+---
 
-- **Guerreiro vs Arqueiro:** Guerreiro ganha +30% de vida.
-- **Arqueiro vs Mago:** Arqueiro ganha +25% de ataque.
-- **Mago vs Guerreiro:** Mago ganha +15% de vida e +15% de ataque.
+## 2. 🚀 Controle de Lançamento Espacial
 
-### 💀 Condições de Derrota
+Você é o engenheiro-chefe da decolagem de um foguete. O lançamento só pode acontecer se:
 
-Uma carta morre se seus pontos de vida forem **menores ou iguais a 0** após um ataque.
+- O combustível estiver acima de 500 litros.
+- A tripulação for maior que 3 pessoas.
 
-### 🏆 Critérios de Vitória de um Duelo
+Peça os dois dados ao usuário e diga se o lançamento está autorizado.
 
-- Vence quem **eliminar a carta adversária**.
-- Se nenhuma carta for eliminada:
-  - Vence quem tiver **mais vida restante**.
-  - Se empatar, vence quem tiver **mais ataque restante**.
+---
 
-### 🧠 Observações
+## 3. 🏰 Entrada no Castelo do Código
 
-- O ataque consiste em subtrair os pontos de vida do inimigo com base no valor de ataque do agressor.
-- Os ataques entre cartas nunca são iguais (é garantido que sempre há um desempate).
+O castelo só permite a entrada de visitantes com **idade entre 12 e 65 anos**.
 
-## 👨‍💻 Entrada do Programa
+- Peça a idade do visitante.
+- Use uma condicional para decidir se a entrada é permitida.
 
-O programa espera como entrada os dados das cartas dos jogadores, nesta ordem:
+### Exemplo:
+```
+Digite sua idade: 70
+Desculpe, o castelo não permite entrada nessa faixa etária.
+```
 
-```text
-ClassePedro1 AtaquePedro1 VidaPedro1
-ClassePedro2 AtaquePedro2 VidaPedro2
-ClassePedro3 AtaquePedro3 VidaPedro3
-ClasseTulio1 AtaqueTulio1 VidaTulio1
-ClasseTulio2 AtaqueTulio2 VidaTulio2
-ClasseTulio3 AtaqueTulio3 VidaTulio3
+---
 
-como por exemplo:
-1 15 10
-1 15 10
-1 70 100
-3 40 15
-3 40 16
-3 49.9 150
+## 4. 🎭 Teste de Personalidade - Escolha uma Cor
 
+Crie um programa que pergunte ao usuário sua cor favorita entre:
 
-📋 Saída Esperada
-Para cada rodada, o programa imprime o vencedor:
-Rodada1: Pedro
-Rodada2: Tulio
-Rodada3: Pedro
+- vermelho
+- azul
+- amarelo
 
-Ao final, imprime o vencedor geral:
-Pedro vitorioso
+Dependendo da cor, exiba uma descrição criativa da personalidade da pessoa.
+
+### Exemplo:
+```
+Qual sua cor favorita? azul
+Você é calmo, focado e analítico como as águas profundas.
+```
+
+---
+
+## 5. 🎲 Jogo do Dado Viciado
+
+O jogador digita um número de 1 a 6 como se fosse o resultado de um dado. Se:
+
+- o número for 6 → “Você ganhou um prêmio!”
+- 1 a 5 → “Boa tentativa, tente de novo.”
+- qualquer outro número → “Número inválido! Dados só vão de 1 a 6.”
+
+Use variáveis e condicionais para resolver isso.
+
+---
+
+🧠 Curtiu os desafios? Tente resolvê-los com criatividade e lógica!
