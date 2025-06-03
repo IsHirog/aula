@@ -56,11 +56,20 @@ Crie um programa que pergunte ao usuário sua cor favorita entre:
 
 Dependendo da cor, exiba uma descrição criativa da personalidade da pessoa.
 
-### Exemplo:
-```
-Qual sua cor favorita? azul
-Você é calmo, focado e analítico como as águas profundas.
-```
+### Descrição das Personalidades por Cor:
+
+- **Vermelho**:  
+  Você é **intenso**, **apaixonado** e vive a vida com **energia e coragem**.  
+  Como o fogo, você inspira e transforma o mundo ao seu redor.
+
+- **Azul**:  
+  Você é **calmo**, **focado** e **analítico**, como as águas profundas.  
+  Sua presença transmite confiança, serenidade e equilíbrio.
+
+- **Amarelo**:  
+  Você é **criativo**, **otimista** e cheio de **energia positiva**.  
+  Sua mente brilha como o sol em um dia claro e inspira boas ideias.
+
 
 ---
 
