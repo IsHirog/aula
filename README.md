@@ -85,4 +85,14 @@ Use variáveis e condicionais para resolver isso.
 
 ---
 
-🧠 Curtiu os desafios? Tente resolvê-los com criatividade e lógica!
+Questão:
+
+## Crie um programa em que o usuário possa utilizar uma calculadora simples no terminal. O programa deve seguir os seguintes passos:
+
+- Solicitar ao usuário o primeiro valor numérico.
+- Solicitar ao usuário o segundo valor numérico.
+- Solicitar ao usuário a operação matemática desejada: adição (+), subtração (-), multiplicação (*) ou divisão (/).
+
+Exibir o resultado da operação.
+
+Perguntar se o usuário deseja realizar uma nova operação. Caso a resposta seja "sim", o programa deve reiniciar; caso seja "não", o programa deve ser finalizado com uma mensagem de despedida.
