@@ -4,95 +4,63 @@ Explore os mundos abaixo resolvendo situações com código! Use variáveis, inp
 
 ---
 
-## 1. 🧙‍♂️ A Poção do Adivinho
+## 📚 Atividade 1 – Calculadora de Áreas (fácil)
 
-O mago precisa de um número para concluir a poção, mas ele deve ser **múltiplo de 3** e **positivo**.
+Crie as seguintes funções para calcular áreas de figuras geométricas:
 
-- Peça ao usuário um número.
-- Verifique se ele é múltiplo de 3 e positivo.
-- Exiba uma mensagem apropriada.
+```python
+def area_quadrado(lado):
+    # Retorna a área de um quadrado
+    ...
 
-### Exemplo:
+def area_triangulo(base, altura):
+    # Retorna a área de um triângulo
+    ...
+
+def area_circulo(raio):
+    # Retorna a área de um círculo (use pi = 3.14)
+    ...
 ```
-Digite um número mágico: 9
-Resposta: Perfeito! Ingrediente aceito.
-```
 
----
-
-## 2. 🚀 Controle de Lançamento Espacial
-
-Você é o engenheiro-chefe da decolagem de um foguete. O lançamento só pode acontecer se:
-
-- O combustível estiver acima de 500 litros.
-- A tripulação for maior que 3 pessoas.
-
-Peça os dois dados ao usuário e diga se o lançamento está autorizado.
-
----
-
-## 3. 🏰 Entrada no Castelo do Código
-
-O castelo só permite a entrada de visitantes com **idade entre 12 e 65 anos**.
-
-- Peça a idade do visitante.
-- Use uma condicional para decidir se a entrada é permitida.
-
-### Exemplo:
-```
-Digite sua idade: 70
-Desculpe, o castelo não permite entrada nessa faixa etária.
+### Exemplo de uso:
+```python
+print(area_quadrado(5))       # 25
+print(area_triangulo(4, 3))   # 6
+print(area_circulo(2))        # 12.56
 ```
 
 ---
 
-## 4. 🎭 Teste de Personalidade - Escolha uma Cor
+## 🧠 Atividade 2 – Verificador de Número Primo (intermediário)
 
-Crie um programa que pergunte ao usuário sua cor favorita entre:
+Crie uma função que verifique se um número é primo.
 
-- vermelho
-- azul
-- amarelo
+```python
+def eh_primo(n):
+    # Retorna True se for primo, False caso contrário
+    ...
+```
 
-Dependendo da cor, exiba uma descrição criativa da personalidade da pessoa.
-
-### Descrição das Personalidades por Cor:
-
-- **Vermelho**:  
-  Você é **intenso**, **apaixonado** e vive a vida com **energia e coragem**.  
-  Como o fogo, você inspira e transforma o mundo ao seu redor.
-
-- **Azul**:  
-  Você é **calmo**, **focado** e **analítico**, como as águas profundas.  
-  Sua presença transmite confiança, serenidade e equilíbrio.
-
-- **Amarelo**:  
-  Você é **criativo**, **otimista** e cheio de **energia positiva**.  
-  Sua mente brilha como o sol em um dia claro e inspira boas ideias.
-
+### Exemplo de uso:
+```python
+print(eh_primo(7))   # True
+print(eh_primo(10))  # False
+```
 
 ---
 
-## 5. 🎲 Jogo do Dado Viciado
+## 💬 Atividade 3 – Saudação Personalizada (fácil)
 
-O jogador digita um número de 1 a 6 como se fosse o resultado de um dado. Se:
+Crie uma função que receba o nome de uma pessoa e retorne uma saudação:
 
-- o número for 6 → “Você ganhou um prêmio!”
-- 1 a 5 → “Boa tentativa, tente de novo.”
-- qualquer outro número → “Número inválido! Dados só vão de 1 a 6.”
+```python
+def saudacao(nome):
+    # Retorna "Olá, [nome]! Seja bem-vindo(a)!"
+    ...
+```
 
-Use variáveis e condicionais para resolver isso.
-
----
-
-Questão:
-
-## Crie um programa em que o usuário possa utilizar uma calculadora simples no terminal. O programa deve seguir os seguintes passos:
-
-- Solicitar ao usuário o primeiro valor numérico.
-- Solicitar ao usuário o segundo valor numérico.
-- Solicitar ao usuário a operação matemática desejada: adição (+), subtração (-), multiplicação (*) ou divisão (/).
-
-Exibir o resultado da operação.
-
-Perguntar se o usuário deseja realizar uma nova operação. Caso a resposta seja "sim", o programa deve reiniciar; caso seja "não", o programa deve ser finalizado com uma mensagem de despedida.
+### Exemplo de uso:
+```python
+print(saudacao("Ana"))     # Olá, Ana! Seja bem-vindo(a)!
+print(saudacao("Carlos"))  # Olá, Carlos! Seja bem-vindo(a)!
+```
