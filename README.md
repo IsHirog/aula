@@ -1,66 +1,64 @@
-# 🐍 Desafios Python - Variáveis, Input e Condicionais
+# 🃏 Duelo de Cartas - Jogo Simplificado
 
-Explore os mundos abaixo resolvendo situações com código! Use variáveis, input e condicionais para avançar 💡🐍
-
----
-
-## 📚 Atividade 1 – Calculadora de Áreas (fácil)
-
-Crie as seguintes funções para calcular áreas de figuras geométricas:
-
-```python
-def area_quadrado(lado):
-    # Retorna a área de um quadrado
-    ...
-
-def area_triangulo(base, altura):
-    # Retorna a área de um triângulo
-    ...
-
-def area_circulo(raio):
-    # Retorna a área de um círculo (use pi = 3.14)
-    ...
-```
-
-### Exemplo de uso:
-```python
-print(area_quadrado(5))       # 25
-print(area_triangulo(4, 3))   # 6
-print(area_circulo(2))        # 12.56
-```
+Este repositório contém uma versão **simplificada** do jogo "Armague", criada para ajudar estudantes iniciantes em programação a praticarem os conceitos de **entrada e saída de dados, funções, condicionais e lógica de decisão**.
 
 ---
 
-## 🧠 Atividade 2 – Verificador de Número Primo (intermediário)
+## 🧠 Objetivo
 
-Crie uma função que verifique se um número é primo.
+Dois jogadores, **Pedro** e **Túlio**, vão duelar com **uma carta cada**. Cada carta possui:
 
-```python
-def eh_primo(n):
-    # Retorna True se for primo, False caso contrário
-    ...
+- **Ataque** (número inteiro)
+- **Vida** (número inteiro)
+
+O objetivo do programa é determinar quem vence o duelo, seguindo as regras abaixo.
+
+---
+
+## ⚔️ Regras do Duelo
+
+1. A carta com **menos vida** ataca primeiro.
+2. Se ambas tiverem **a mesma vida**, **Pedro** ataca primeiro.
+3. O ataque **diminui a vida do oponente** pelo valor do ataque.
+4. Se o oponente **sobreviver (vida > 0)**, ele **revida** com um ataque.
+5. Após no máximo dois ataques (um de cada), o duelo termina.
+
+---
+
+## 🏆 Como Determinar o Vencedor
+
+- Se **um dos jogadores morrer (vida <= 0)** após os ataques, o outro vence.
+- Se **ninguém morrer**, vence quem tiver **mais vida restante**.
+
+---
+
+## 📥 Entrada Esperada
+
+O programa deve solicitar:
+
 ```
-
-### Exemplo de uso:
-```python
-print(eh_primo(7))   # True
-print(eh_primo(10))  # False
+Ataque de Pedro: <valor>
+Vida de Pedro: <valor>
+Ataque de Túlio: <valor>
+Vida de Túlio: <valor>
 ```
 
 ---
 
-## 💬 Atividade 3 – Saudação Personalizada (fácil)
+## 📤 Exemplo de Saída
 
-Crie uma função que receba o nome de uma pessoa e retorne uma saudação:
-
-```python
-def saudacao(nome):
-    # Retorna "Olá, [nome]! Seja bem-vindo(a)!"
-    ...
+```
+Túlio venceu o duelo!
 ```
 
-### Exemplo de uso:
-```python
-print(saudacao("Ana"))     # Olá, Ana! Seja bem-vindo(a)!
-print(saudacao("Carlos"))  # Olá, Carlos! Seja bem-vindo(a)!
-```
+---
+
+## 💡 Conceitos Trabalhados
+
+- Funções
+- Leitura de dados com `input()`
+- Conversão de dados com `int()`
+- Estruturas condicionais `if`, `else`
+- Lógica de combate simples
+
+---
